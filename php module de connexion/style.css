@@ -1,0 +1,311 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1c1c1c;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode:lighten;
+  backdrop-filter: blur(8px);
+  min-height: 100vh;
+}
+h1{
+  text-align: center;
+}
+input, button{
+  display: block;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+/*--Header--*/
+header{
+  display:grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  color: #044d1b;
+  background-color: #2f2f2f;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  margin: 0 40px;
+  padding: 5px 34vw;
+  z-index: 100;
+  text-align: center;
+  position: sticky;
+  border-radius: 3px;
+}
+header > nav > a, .btn_profil{
+  text-align:center;
+  display: block;
+  padding: 0.9em;
+  border-radius: 5px;
+  background-color: #069b35;
+  color: white;
+  box-shadow: inset 0 0 0 white,
+  0 0 0 #005f7a;
+  transition-property:all;
+  transition-duration: 1000ms;
+  width: 24vw;
+}
+header > nav > a:hover, .btn_profil:hover{
+  letter-spacing: 0.3vw;
+}
+.btn_admin{
+  padding: 0.7em;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+  box-shadow: inset 0 0 0 white,
+  0 0 0 orange;
+}
+.btn_admin:hover{
+  box-shadow: inset 0 0 100px white,
+  0 0 20px orange;
+  color: orange;
+}
+header > p{
+  text-align: right;
+  margin-right: 2vw;
+  width: 24vw;
+}
+/*--Footer--*/
+footer{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #005f7a;
+  padding: 0 2em;
+  border-radius: 15px 0 0 0;
+  background-color: white;
+  font-size: 0.8em;
+  z-index: 99;
+
+}
+
+/*--index--*/
+.presentation{
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1c1c;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.presentation > h1{
+  margin: 45vh auto;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+.presentation > h1 > span{
+  display: block;
+  font-size: 0.6em;
+}
+
+/*--Conexion et Admin--*/
+p {
+  color: white;
+  text-align: center;
+}
+.connexion{
+  display: block;
+  padding: 3% 5%;
+  margin: 12vh 24vw 0 24vw;
+  background-color: rgb(49, 49, 49);
+  box-shadow: 0 0 20px rgb(0,0,0,0.5);
+}
+.administration, .profil{
+  display: block;
+  padding: 3% 5%;
+  margin: 15vh 20vw 0 20vw;
+  background-color: rgb(49, 49, 49);
+  box-shadow: 0 0 20px rgb(0,0,0,0.5);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.administration > table, .profil > table{
+  margin: 3% auto 3% auto;
+  border: 5px solid #069b35;
+  box-shadow: 0 0 15px rgb(0,0,0,0.5);
+}
+
+.administration > table > thead, .profil > table > thead {
+  color: white;
+  background-color: #069b35;
+}
+.connexion > h1, .administration > h1, .profil > h1{
+  display: block;
+  margin: 0;
+  font-size: 2em;
+  color: white;
+}
+.connexion > form{
+  padding: 3em 0;
+}
+.connexion > form > input{
+  padding: 0.5em;
+  color: #ffffff;
+  width: 250px;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ffffff;
+  background-color: rgb(104, 104, 104);
+  border-radius: 10px;
+}
+
+.connexion > form > input::placeholder{
+  font-size: 0.6em;
+  color: rgb(255, 255, 255);
+}
+.connexion > form > input:hover::placeholder{
+  color: white;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+.connexion > form > button{
+  padding: 0.7em;
+  width: 270px;
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  background-color: #069b35;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  color: white;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+.connexion > form > button:hover{
+  letter-spacing: 0.5vw;
+  color: white;
+  transition-property: all;
+  transition-duration: 1000ms;
+}
+.connexion > p > a{
+  padding: 0.7em;
+  width: 300px;
+  font-size: 1.2em;
+  margin: 0.5em;
+  background-color: #069b35;
+  border-radius: 10px;
+  color: white;
+  transition-property: all;
+  transition-duration: 200ms;
+  
+}
+.connexion > p > a:hover{
+  letter-spacing: 0.3vw;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+/*--profil--*/
+.modif {
+  padding: 2em;
+  background-color: rgb(33, 33, 33);
+  border: 2px solid #141414;
+  color: white;
+  font-weight: 600;
+  width: 60%;
+  min-width: 450px;
+  margin: auto;
+  height: 250px;
+
+}
+.modif_int{
+  height: 1px;
+
+}
+.modif:hover > .modif_int{
+  height: 350px;
+}
+.modif > .modif_int > form{
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  width: 60%;
+  min-width: 400px;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  align-items: center;
+  align-content: center;
+
+}
+.modif > .modif_int > form input{
+  width: 100%;
+  margin: 0 1em 0 1em;
+  padding: 0.3em;
+}
+.modif > .modif_int > form button{
+  width: 100%;
+  margin: 0 1em 0 1em;
+  background-color: #282828;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-weight: 600;
+}
+.modif > .modif_int > form button:hover{
+  background-color: rgb(4, 130, 4);
+}
+.modif > .modif_int > form label{
+  width: 100%;
+  text-align: right;
+}
+.modif > .modif_int > form button{
+  width: 100%;
+  height: 100%;
+}
+.deco{
+  padding: 7px;
+  font-size: 17px;
+  margin: 0;
+  background-color: rgb(167, 6, 6);
+  border: 1px solid rgb(100,0,0);
+  border-radius: 10px;
+  color: white;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+.deco:hover{
+  letter-spacing: 1px;
+  color: white;
+  width: 8em;
+  transition-property: all;
+  transition-duration: 1500ms;
+}
+/*--Erreurs et Validations--*/
+
+.error{
+  color: white;
+  background: red;
+  display: block;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-align: center;
+}
+.validation{
+  color: white;
+  background: green;
+  display: block;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-align: center;
+}
+h2 {
+  color: white;
+}
+td {
+  color: white;
+}
+
